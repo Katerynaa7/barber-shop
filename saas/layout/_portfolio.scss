@@ -1,0 +1,24 @@
+.portfolio__uppertitle {
+  margin-bottom: 70px;
+  @include tablet {
+    margin-bottom: 44px;
+  }
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.portfolio-item {
+  @include tablet {
+    flex-basis: calc(
+      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
+    );
+  }
+
+  @include desktop {
+    --items: 4;
+  }
+}
