@@ -5,13 +5,15 @@
   }
 }
 
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: var(--indent);
 }
 
-.portfolio-item {
+.portfolio__item {
   @include tablet {
     flex-basis: calc(
       (100% - var(--indent) * (var(--items) - 1)) / var(--items)
